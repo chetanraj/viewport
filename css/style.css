@@ -1,8 +1,13 @@
+@font-face {
+    font-family:"Exo";
+    src: url("../fonts/Exo-Regular.otf")
+}
+
 body {
     margin: 0px;
     padding: 80px 0px 40px 0px;
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #799999;
+    font-family: 'Exo';
+    color: #424242;
     font-size: 16px;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     background-color: #E8F1F5;
@@ -12,6 +17,12 @@ body {
     -webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,102,0.2);
     -moz-box-shadow: 0px 1px 1px 0px rgba(0,0,102,0.2);
     box-shadow: 0px 1px 1px 0px rgba(0,0,102,0.1);
+}
+
+.shadow-depth {
+    -webkit-box-shadow: 0px 3px 10px 3px rgba(0,0,102,0.2);
+    -moz-box-shadow: 0px 3px 10px 3px rgba(0,0,102,0.2);
+    box-shadow: 0px 3px 10px 3px rgba(0,0,102,0.1);
 }
 
 .rotate {
