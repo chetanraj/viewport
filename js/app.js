@@ -39,6 +39,17 @@ $(document).ready(function() {
 	});
 
 	/*
+	 * For Orientation
+	 */
+	Modernizr.on('landscape', function(result) {
+		$('.d-o').text('Landscape');
+	});
+	
+	Modernizr.on('portrait', function(result) {
+		$('.d-o').text('Portrait');
+	});
+
+	/*
 	 * Global Events
 	 */
 	$(window).resize(function() {
@@ -49,8 +60,10 @@ $(document).ready(function() {
 	window.addEventListener("orientationchange", function() {
 		if($('.portrait').length) {
 			$('.icon-device').addClass('rotate');
+			$('.d-o').text('Portrait');
 		}	else {
 			$('.icon-device').removeClass('rotate');
+			$('.d-o').text('Landscape');
 		}	
 	}, false);
 
