@@ -8,7 +8,9 @@ $(document).ready(function() {
 	 To-Do - Find the iPhone Version
 	 */
 	Modernizr.on('mac', function(result) {
-		$('.d').removeClass('hidden').text('Mac Book');
+		$('.card-row.hidden').removeClass('hidden');
+		
+		$('.d').text('Mac Book');
 		$('.d').before('<i class="icono-macbookBold"></i>');
 	});
 	
@@ -17,7 +19,9 @@ $(document).ready(function() {
 	 To-Do - Find the iPhone Version
 	 */
 	Modernizr.on('iphone', function(result) {
-		$('.d').removeClass('hidden').text('iPhone');
+		$('.card-row.hidden').removeClass('hidden');
+		
+		$('.d').text('iPhone');
 		$('.d').before('<i class="icono-iphoneBold"></i>');
 		
 		// Listen for orientation changes

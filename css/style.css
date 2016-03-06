@@ -18,6 +18,14 @@ body {
   transform: rotate(90deg);
 }
 
+.card-row [class*=icono-] {
+  margin-right: 10px;
+}
+
+.hidden {
+  display: none !important;
+}
+
 .header {
     width: 100%;
     position: fixed;
