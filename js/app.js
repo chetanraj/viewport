@@ -53,14 +53,16 @@ $(document).ready(function() {
 	 * Global Events
 	 */
 	$(window).resize(function() {
-		$('.device, .orientation').hide();
+		// BUG
+		// $('.device, .orientation').hide(); 
 		
 		$('.d-w').text( $(window).width() + 'px' );
 		$('.d-h').text( $(window).height() + 'px' );
 	});
 	
 	window.addEventListener("orientationchange", function() {
-		$('.device, .orientation').show();
+		// BUG
+		// $('.device, .orientation').show();
 		
 		if($('.portrait').length) {
 			$('.icon-device').addClass('rotate');
