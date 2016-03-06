@@ -14,6 +14,10 @@ body {
     box-shadow: 0px 1px 1px 0px rgba(0,0,102,0.1);
 }
 
+.rotate {
+  transform: rotate(90deg);
+}
+
 .header {
     width: 100%;
     position: fixed;

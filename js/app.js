@@ -22,8 +22,13 @@ $(document).ready(function() {
 		
 		// Listen for orientation changes
 		window.addEventListener("orientationchange", function() {
-			// Announce the new orientation number
-			alert(window.orientation);
+			
+			if($('.portrait').length) {
+				$('.icono-iphoneBold').addClass('rotate');
+			}	else {
+				$('.icono-iphoneBold').removeClass('rotate');
+			}
+			
 		}, false);
 	});
 
