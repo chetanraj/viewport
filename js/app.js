@@ -53,6 +53,8 @@ $(document).ready(function() {
 	 * Global Events
 	 */
 	$(window).resize(function() {
+		$('.device, .orientation').hide();
+		
 		$('.d-w').text( $(window).width() + 'px' );
 		$('.d-h').text( $(window).height() + 'px' );
 	});
