@@ -60,6 +60,8 @@ $(document).ready(function() {
 	});
 	
 	window.addEventListener("orientationchange", function() {
+		$('.device, .orientation').show();
+		
 		if($('.portrait').length) {
 			$('.icon-device').addClass('rotate');
 			$('.d-o').text('Portrait');
