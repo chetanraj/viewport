@@ -84,3 +84,17 @@ body {
 .card-row {
 	padding: 1em 0;
 }
+
+@media only screen 
+and (orientation : landscape) {
+    .dop {
+        display: none;
+    }
+}
+
+@media only screen 
+and (orientation : portrait) {
+    .dol {
+        display: none;
+    }
+}

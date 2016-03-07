@@ -1,13 +1,13 @@
-$(document).ready(function() {
+$(document).ready(function () {
 	
-	$('.d-w').text( screen.width + 'px' );
-	$('.d-h').text( screen.height + 'px' );
+	$('.d-w').text(screen.width + 'px');
+	$('.d-h').text(screen.height + 'px');
 	
 	/*
 	 * For Mac
 	 * To-Do - Find the Mac Version
 	 */
-	Modernizr.on('mac', function(result) {
+	Modernizr.on('mac', function (result) {
 		$('.card-row.hidden').removeClass('hidden');
 		
 		$('.d').text('Mac Book');
@@ -18,7 +18,7 @@ $(document).ready(function() {
 	 * For iPhone
 	 * To-Do - Find the iPhone Version
 	 */
-	Modernizr.on('iphone', function(result) {
+	Modernizr.on('iphone', function (result) {
 		$('.card-row.hidden').removeClass('hidden');
 		
 		$('.d').text('iPhone');
@@ -29,48 +29,23 @@ $(document).ready(function() {
 	 * For Android
 	 * To-Do - Find the Device Type
 	 */
-	Modernizr.on('android', function(result) {
-		if( Modernizr.tablet ) {
-			$('.card-row.hidden').removeClass('hidden');
-			
+	Modernizr.on('android', function (result) {
+        $('.card-row.hidden').removeClass('hidden');
+        $('.d').before('<i class="icono-nexus icon-device"></i>');
+        
+		if(Modernizr.tablet) {
 			$('.d').text('Android Tablet');
-			$('.d').before('<i class="icono-nexus icon-device"></i>');
-		}
-	});
-
-	/*
-	 * For Orientation
-	 */
-	Modernizr.on('landscape', function(result) {
-		$('.d-o').text('Landscape');
-	});
-	
-	Modernizr.on('portrait', function(result) {
-		$('.d-o').text('Portrait');
+		} else {
+            $('.d').text('Android Device');
+        }
 	});
 
 	/*
 	 * Global Events
 	 */
-	$(window).resize(function() {
-		// BUG
-		// $('.device, .orientation').hide(); 
-		
-		$('.d-w').text( $(window).width() + 'px' );
-		$('.d-h').text( $(window).height() + 'px' );
-	});
-	
-	$(window).on("orientationchange",function(){
-		// BUG
-		// $('.device, .orientation').show();
-		
-		if($('.portrait').length) {
-			$('.icon-device').addClass('rotate');
-			$('.d-o').text('Landscape');
-		}	else {
-			$('.icon-device').removeClass('rotate');
-			$('.d-o').text('Portrait');
-		}
+	$(window).resize(function () {		
+		$('.d-w').text($(window).width() + 'px');
+		$('.d-h').text($(window).height() + 'px');
 	});
 	
 });
