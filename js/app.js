@@ -33,7 +33,7 @@ $(document).ready(function () {
         $('.card-row.hidden').removeClass('hidden');
         $('.d').before('<i class="icono-nexus icon-device"></i>');
         
-		if(Modernizr.tablet) {
+		if (Modernizr.tablet) {
 			$('.d').text('Android Tablet');
 		} else {
             $('.d').text('Android Device');
@@ -43,15 +43,15 @@ $(document).ready(function () {
 	/*
 	 * Global Events
 	 */
-	 $(window).on("orientationchange",function(){
-		if($('.portrait').length) {
+	 $(window).on("orientationchange", function () {
+		if ($('.portrait').length) {
 			$('.icon-device').addClass('rotate');
-		}	else {
+		} else {
 			$('.icon-device').removeClass('rotate');
 		}
 	});
 	
-	$(window).resize(function () {		
+	$(window).resize(function () {
 		$('.d-w').text($(window).width() + 'px');
 		$('.d-h').text($(window).height() + 'px');
 	});
