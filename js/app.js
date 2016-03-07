@@ -66,10 +66,10 @@ $(document).ready(function() {
 		
 		if($('.portrait').length) {
 			$('.icon-device').addClass('rotate');
-			$('.d-o').text('Portrait');
+			$('.d-o').text('Landscape');
 		}	else {
 			$('.icon-device').removeClass('rotate');
-			$('.d-o').text('Landscape');
+			$('.d-o').text('Portrait');
 		}
 	});
 	
