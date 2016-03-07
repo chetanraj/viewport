@@ -60,7 +60,7 @@ $(document).ready(function() {
 		$('.d-h').text( $(window).height() + 'px' );
 	});
 	
-	window.addEventListener("orientationchange", function() {
+	$(window).on("orientationchange",function(){
 		// BUG
 		// $('.device, .orientation').show();
 		
@@ -70,7 +70,7 @@ $(document).ready(function() {
 		}	else {
 			$('.icon-device').removeClass('rotate');
 			$('.d-o').text('Landscape');
-		}	
-	}, false);
-
+		}
+	});
+	
 });
