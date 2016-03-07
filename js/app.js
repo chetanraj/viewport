@@ -43,6 +43,14 @@ $(document).ready(function () {
 	/*
 	 * Global Events
 	 */
+	 $(window).on("orientationchange",function(){
+		if($('.portrait').length) {
+			$('.icon-device').addClass('rotate');
+		}	else {
+			$('.icon-device').removeClass('rotate');
+		}
+	});
+	
 	$(window).resize(function () {		
 		$('.d-w').text($(window).width() + 'px');
 		$('.d-h').text($(window).height() + 'px');
