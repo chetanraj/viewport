@@ -3,10 +3,10 @@
 every detail about viewport
 
 
-[![GitHub version](https://badge.fury.io/gh/chetanraj%2Fviewport.svg)](https://badge.fury.io/gh/chetanraj%2Fviewport) 
+[![GitHub version](https://badge.fury.io/gh/chetanraj%2Fviewport.svg)](https://badge.fury.io/gh/chetanraj%2Fviewport) [![Made With Love](https://img.shields.io/badge/Made%20With-Love-orange.svg)](https://github.com/chetanraj/viewport)
 
 
-## sample for iPhone 6
+## sample screenshots of iPhone 6
 
 #### landscape mode
 
@@ -15,6 +15,3 @@ every detail about viewport
 #### portrait mode
 
 ![Alt text](images/portrait.png)
-
-## License
-[MIT License](LICENSE.md) 
