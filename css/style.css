@@ -68,9 +68,7 @@ body {
     max-width: 1800px;
 }
 
-.card {
-    margin: 30px;
-    padding: 20px;
+.content .card {
     background-color: #FFF;
     border-radius: 8px;
     display: inline-block;
@@ -81,8 +79,27 @@ body {
 		max-width: 480px;
 }
 
+.card {
+  margin: 30px;
+  padding: 20px;
+}
+
+.content .card.card-dm {
+  background: rgba(0, 0, 0, 0);
+}
+
 .card-row {
 	padding: 1em 0;
+}
+
+
+/****************************
+ * Device Mock CSS
+ ****************************/
+
+.content .card.df-frame > .df-screen >.df-content {
+  padding: 1em;
+  background: #fff;
 }
 
 @media only screen 

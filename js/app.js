@@ -11,7 +11,14 @@ $(document).ready(function () {
 		$('.card-row.hidden').removeClass('hidden');
 		
 		$('.d').text('Mac Book');
-		$('.d').before('<i class="icono-macbookBold"></i>');
+		
+		$('.card').addClass('p0 card-dm').removeClass('shadow-depth').deviceMock({
+		   type        	: 'laptop',
+		   imgPath	   	: './images/',
+		   size        	: '4x',
+		   orientation	: 'portrait' ,
+		   address     	: 'http://chetanraj.in/viewport'
+		});
 	});
 	
 	/*
