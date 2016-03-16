@@ -10,7 +10,7 @@ $(document).ready(function () {
 	Modernizr.on('mac', function (result) {
 		$('.card-row.hidden').removeClass('hidden');
 		
-		$('.d').text('Mac Book');
+		$('.d').text('MacBook');
 		
 		$('.card').addClass('p0 card-dm').removeClass('shadow-depth').deviceMock({
 		   type        	: 'laptop',
