@@ -1,7 +1,7 @@
 $(document).ready(function () {
 	
-	$('.d-w').text(screen.width + 'px');
-	$('.d-h').text(screen.height + 'px');
+	$('.d-w').text($(window).width() + 'px');
+	$('.d-h').text($(window).height() + 'px');
 	
 	/*
 	 * For Mac
